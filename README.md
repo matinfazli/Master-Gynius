@@ -52,7 +52,7 @@ Final Result:
 
 ## So you want to run this app ?
 
-Cooooll! Clone or download the app, open sample.env, replace it with a API Key from Riot and  then run
+Cooooll! Clone or download the app, open sample.env, replace it with a API Key from Riot and save it as **.env**, then run:
 
     npm install
     grunt server
