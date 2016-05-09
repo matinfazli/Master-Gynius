@@ -1,0 +1,33 @@
+extends layout
+
+block content
+	script.
+		var data =!{JSON.stringify(apiData)};
+	script(src='/app/search.js')
+
+	.main-container.search(ng-app="App", ng-controller="showDataCtrl")
+		.full-bkg
+
+		.heading
+			.avatar
+				img(ng-src="{{avatar}}")
+			.account-detail
+				p.name {{name}}
+				p.level Level {{level}}
+			.sort-group
+				label
+					input(type='radio', ng-click="sortBy('points')", checked)
+					span.button-group-item Score
+				label
+					input(type='radio', ng-click="sortBy('name')")
+					span.button-group-item Alphabetic
+		.score-heading
+			.mastery-score
+				p Mastery Score : 
+					span {{score}}
+			.total-points
+				p Total Score : 
+					span {{points}}
+			
+
+		.champion-grid

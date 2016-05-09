@@ -1,0 +1,22 @@
+html {
+	background: $purple;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.15s ease-in;
+}
+
+input, textarea, button {
+	&:focus { outline: none; }
+}

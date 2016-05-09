@@ -1,0 +1,152 @@
+.search {
+
+	.heading {
+		width: 100%;
+		height: 100px;
+		padding: 15px 30px;
+		border-bottom: 1px solid black;
+		background: $purple-darkest;
+
+		.avatar {
+			float: left;
+			display: block;
+			width: 70px;
+			height: auto;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.account-detail {
+			float: left;
+			display: block;
+			padding-left: 15px;
+			vertical-align: top;
+
+			p {
+				color: white;
+				font-weight: 300;
+
+				&.name {
+					font-size: 30px;
+					font-weight: 400;
+				}
+				&.level {padding-top: 5px;}
+			}
+		}
+
+		.mastery-score {
+			text-align: center;
+
+			p {
+				color: white;
+				font-weight: 300;
+				&.title { font-size: 20px; }
+				&.score { font-size: 15px; }
+			}
+		}
+
+		.sort-group {
+			float: right;
+			padding-top: 15px;
+
+			input { display: none; }
+			
+			label {
+				display: inline-block;
+				color: white;
+				font-weight: 300;
+			}
+
+			.button-group-item {
+				cursor: pointer;
+				display: inline-block;
+				width: 100%;
+				padding: 10px 20px;
+				background: $red-main;
+			}
+			
+			input:checked + .button-group-item {
+				background: $red-dark;
+			}
+		}
+
+	}
+
+	.score-heading {
+		width: 100%;
+		height: 50px;
+		padding: 10px 30px;
+		border-bottom: 1px solid black;
+		background: $purple-dark;
+
+		p {
+			color: white;
+			font-size: 20px;
+			font-weight: 400;
+		}
+
+		.mastery-score {
+			float: left;
+		}
+
+		.total-points {
+			float: right;
+		}
+	}
+
+	.champion-grid {
+
+		.item {
+			width: 16.5%;
+			height: 350px;
+    		min-width: 210px;
+   			max-width: 308px;
+			background: black;
+
+			.bkg {
+				width: auto;
+				max-height: 350px;
+				overflow: hidden;
+
+				img {
+					width: 308px;
+					height: 560px;
+					margin: -50px 0 0 -25px;
+				}
+			}
+
+			.details {
+				z-index: 200;
+				position: relative;
+				width: 100%;
+				height: 80px;
+				margin-top: -80px;
+				text-align: center;
+				background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 50%,rgba(0,0,0,0.8) 100%);
+
+				p.champ-name {
+					color: white;
+					font-size: 20px;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+
+				.mastery-score {
+
+					span.active { 
+						padding: 2px;
+						color: $gold;
+					}
+				}
+
+				p.mastery-points {
+					color: white;
+					font-weight: 300;
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}

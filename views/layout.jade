@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+		title= 'Master Gynius | ' + title
+		link(rel='stylesheet', href='/stylesheets/main.min.css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+		script(src='/javascripts/jquery.js')
+		script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js")
+		script(src='https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js')
+
+		body
+			include ./includes/_navigation.jade
+			block content

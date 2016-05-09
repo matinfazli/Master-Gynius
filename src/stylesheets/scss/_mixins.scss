@@ -1,0 +1,4 @@
+@mixin full-background($url) {
+	background: url($url) no-repeat center center fixed; 
+	@include prefixer(background-size, cover, webkit moz spec);
+}

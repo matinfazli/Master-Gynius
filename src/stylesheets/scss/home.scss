@@ -1,0 +1,67 @@
+.home {
+	.jumberton {
+		margin-top: 250px;
+		text-align: center;
+
+		p {
+			color: white;
+			font-weight: 200;
+
+			&.welcome { font-size: 50px; }
+
+			&.info { 
+				padding-top: 20px;
+				font-size: 20px; 
+				opacity: 0.8;
+			}
+		}
+
+		.search-summoner {
+			padding-top: 30px;
+		}
+
+		.region-select {
+			height: 48px;
+			padding: 0 15px;
+			color: black;
+			font-size: 14px;
+			font-weight: 200;
+			border: 0;
+			border-radius: 0;
+			border-left: 1px solid $red-main;
+			outline: 0;
+			background: white;
+			-webkit-appearance: none;
+		}
+
+		.text-input {
+			height: 48px;
+			min-width: 200px;
+			padding: 15px;
+			color: black;
+			font-size: 14px;
+			font-weight: 200;
+			border: 0;
+			outline: 0;
+			background: white;
+			-webkit-appearance: none;
+		}
+
+		.btn-blue {
+			height: 48px;
+			padding: 15px 20px;
+			color: white;
+			font-size: 14px;
+			font-weight: 200;
+			border: 0;
+			outline: 0;
+			text-transform: uppercase;
+			background: $red-main;
+			-webkit-appearance: none;
+
+			&:hover {
+				background: $red-dark;
+			}
+		}
+	}
+}

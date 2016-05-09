@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	script(src='./app/index.js')
+
+	.main-container.home(ng-app="App", ng-controller="searchCtrl")
+		.full-bkg
+
+		.jumberton
+
+			p.welcome Welcome to Master Gynius
+			p.info Get in depth information of your champion mastery now
+
+			.search-summoner
+				input.text-input(type='text', placeholder='Summoner Name', ng-model='name')
+				select.region-select(ng-model='region')
+					option(value='region', disabled selected) Region
+					option(value='euw') EUW
+					option(value='na') NA
+				a.btn-blue(href="javascript:;" ng-click="search()") Get Information

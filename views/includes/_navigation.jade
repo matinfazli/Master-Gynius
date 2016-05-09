@@ -1,0 +1,14 @@
+header.sidebar-nav
+	nav(role='navigation')
+		ul
+			li.nav-link(class="#{ title === 'Home' || title === 'Search' ? 'active' : '' }")
+				a(href='/')
+					img.logo(src="/images/logo.png")
+			li.nav-link(class="#{ title === 'Methods' ? 'active' : '' }")
+				a(href='/methods') 
+					p.fa.fa-area-chart
+					p Methods
+			li.nav-link(class="#{ title === 'About' ? 'active' : '' }")
+				a(href='/about') 
+					p.fa.fa-child
+					p About
