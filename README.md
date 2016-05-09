@@ -49,6 +49,7 @@ Final Result:
 
 <img src="search.png" />
 
+In case you want to understand the concept better, head over to the codes, I have added tons of comments so everyone can understand whats going on. Cheers
 
 ## So you want to run this app ?
 
